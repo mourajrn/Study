@@ -7,6 +7,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Study
 {
@@ -21,7 +22,15 @@ namespace Study
 
             List<Element> beams = new FilteredElementCollector(doc).WhereElementIsNotElementType().OfCategory(BuiltInCategory.OST_StructuralFraming).ToList();
 
-            using (StreamWriter streamWriter = new StreamWriter("C:\\Users\\Pichau\\source\\repos\\Study\\Study\\bin\\Debug\\Output.txt", false))
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+
+            saveFileDialog.Filter = "Text|*.txt";
+
+            saveFileDialog.Title = "Escolha o local para salvar o arquivo";
+
+            saveFileDialog.ShowDialog();
+
+            using (StreamWriter streamWriter = new StreamWriter(saveFileDialog.OpenFile()))
             {
                 foreach (Element beam in beams)
                 {
