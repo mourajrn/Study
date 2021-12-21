@@ -57,6 +57,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GetStructureData.cs" />
     <Compile Include="CollectBeamData.cs" />
     <Compile Include="ChangeType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
