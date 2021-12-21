@@ -7,7 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace CarnotTools
+namespace Study
 {
     [Transaction(TransactionMode.Manual)]
     public class TagOpenings : IExternalCommand
