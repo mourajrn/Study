@@ -60,6 +60,7 @@
     <Compile Include="CollectBeamData.cs" />
     <Compile Include="ChangeType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TagOpenings.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
